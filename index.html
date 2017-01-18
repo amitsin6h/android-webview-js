@@ -7,22 +7,15 @@
 </head>
 <body>
 <h1>Android Webview JS</h1>
-<p id="mytext">Hello!</p>
-<input type="button" value="Say hello" onClick="showAndroidToast('Hello Android!')" />
-<input type="button" value="Open Dialog" onClick="openAndroidDialog()" />
-<script language="javascript">
-   function showAndroidToast(toast) {
-       AndroidFunction.showToast(toast);
-   }
 
-   function openAndroidDialog() {
-       AndroidFunction.openAndroidDialog();
-   }
-  
-   function callFromActivity(msg){
- document.getElementById("mytext").innerHTML = msg;
-   }
+<script type="text/javascript">
+    function showAndroidToast(toast) {
+        Android.showToast(toast);
+    }
 </script>
+
+<input type="button" value="Say hello" onClick="showAndroidToast('Hello Android!')" />
+
 
 </body>
 </html>
